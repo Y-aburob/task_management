@@ -1,0 +1,94 @@
+.border {
+    border: 1px solid rgb(198, 204, 203);
+}
+
+.borderSolid {
+    border: 1px solid rgb(210, 213, 222);
+}
+
+.borderColumnBackground {
+    border: 1px solid rgb(226 231 253);
+}
+.grayBorder {
+    border: 2px dashed rgb(210, 213, 222);
+}
+
+.label {
+  font-size: 1rem;
+}
+
+.input:focus + .label {
+  top: 3px;
+  font-size: .8rem;
+  color: rgba(107,118,151, .8);
+}
+
+.label1 {
+  font-size: 1rem;
+}
+
+.input1:focus + .label1 {
+  top: -20px;
+  left: -15px;
+  font-size: .8rem;
+  color: rgba(107,118,151, .8);
+  opacity: 1;
+  cursor: default;
+}
+
+.font {
+  font-size: .8rem;
+}
+
+.input1:focus + .label .image {
+  opacity: 0;
+}
+
+  .scroller::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+  
+  .scroller::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+  }
+  
+  .scroller::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scroller {
+    scrollbar-width: thin;
+    scrollbar-color: #c6c6c6 transparent;
+  }
+
+
+
+.box-shadow {
+  box-shadow: 0px 10px 20px 0px #e8e8e8;
+}
+.box-shadow2 {
+  box-shadow: 0px 10px 20px 0px #f8f8f8;
+}
+.box-shadow3 {
+  box-shadow: 0px -10px 20px 0px #f8f8f8, 0px 10px 20px 0px #f8f8f8;
+}
+
+
+
+.animation {
+  animation-name: color;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color{
+
+  0% {
+    background-color: rgba(254, 202, 202, .5);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
