@@ -32,7 +32,7 @@ export default function Page() {
     const [ticketId, setTicketId] = useState(0)
     const [filterTtitle, setFilterTtitle] = useState('')
     const [columns, setColumns] = useState<any>([]);
-    const [resetColumn, setResetColumn] = useState([])
+    const [resetColumn, setResetColumn] = useState<any>([])
     const [searchInput, setSearchInput] = useState('')
     const [showValidationMessage, setShowValidationMessage] = useState(false)
     const [showValidationMessageTask, setShowValidationMessageTask] = useState(false)
@@ -187,8 +187,8 @@ export default function Page() {
 
     
     const debounce = (func: any, delay: any) => {
-        let timer;
-        return (...args) => {
+        let timer: number;
+        return (...args: any) => {
             clearTimeout(timer);
             timer = setTimeout(() => func(...args), delay);
         };
@@ -200,7 +200,7 @@ export default function Page() {
         }
     }, [searchInput, resetColumn]);
 
-    const handleSearchChange = (e) => {
+    const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchInput(e.target.value);
         debouncedSearch(e.target.value);
     };
